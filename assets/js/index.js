@@ -29,3 +29,17 @@ pageTopBtn.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+var pics_src = new Array("./assets/images/key-visual.png","./assets/images/studying.png","./assets/images/self-studying.png","./assets/images/example-active.png");
+
+var num = 0;
+
+function slideshow() {
+    if (num == 3) {
+        num = 0;
+    }
+    else {
+        num ++;
+    }
+    document.getElementById("mypic").src=pics_src[num];
+}
