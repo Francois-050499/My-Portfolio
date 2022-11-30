@@ -24,22 +24,25 @@ window.addEventListener('scroll' , () => {
 
 const pageTopBtn = document.querySelector('#back-to-top');
 pageTopBtn.addEventListener('click', () => {
-  window.scrollTo({
+    window.scrollTo({
     top: 0,
     behavior: 'smooth'
-  });
+    });
 });
 
-var pics_src = new Array("./assets/images/key-visual.png","./assets/images/studying.png","./assets/images/self-studying.png","./assets/images/example-active.png");
+var pics_src = new Array("./assets/images/key-visual.png","./assets/images/studying.png","./assets/images/self-studying.png");
 
-var num = 0;
+var num = -1;
 
-function slideshow() {
-    if (num == 3) {
+slideshow_timer();
+
+function slideshow_timer() {
+    if (num == 2) {
         num = 0;
     }
     else {
         num ++;
     }
     document.getElementById("mypic").src=pics_src[num];
+    setTimeout("slideshow_timer()",5000);
 }
