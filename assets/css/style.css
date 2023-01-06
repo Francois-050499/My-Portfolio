@@ -18,8 +18,8 @@ body {
     linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
     background-size: 13px, 29px, 37px, 53px; */
 
-    background-image: url(../images/trianglify-pevm4.svg);
-    background-size: 450%;
+    background-image: url(../images/trianglify-export.png);
+    background-size: cover;
     background-position: center center;
 }
 
