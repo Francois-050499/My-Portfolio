@@ -152,19 +152,20 @@ body {
     position: relative;
     overflow: hidden;
     max-width: 80%;
-    margin: 0 auto;
+    margin: -60px auto;
 }
 
 .section-image {
-    width: 100%;
+    width: 75%;
     height: 75%;
+    margin: 0 auto;
     aspect-ratio: 16 / 9;
-    margin: 102.5px 20px 0 95px;
+    margin: 100px 0px 0 150px;
     border-radius: 32px;
 }
 
 
-.section-photos li img {
+/* .section-photos li img {
     width: 39%;
     height: 50%;
     border-radius: 32px;    
@@ -181,11 +182,11 @@ body {
 
 .section-image-three {
     margin: 15.5px 0 0 160px;
-}
+} */
 
 .section-description {
     max-width: 70%;
-    margin: 40px auto;
+    margin: 90px auto;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
@@ -255,14 +256,14 @@ body {
         margin: 0 auto;
     }
 
-    .section-image-one {
+    /* .section-image-one {
         margin: -30px 0 0 -100px;
     }
 
     .section-image-two,
     .section-image-three {
         margin: -30px 0 0 125px;
-    }
+    } */
 
     .section-description {
         margin-top: 80px;
@@ -367,7 +368,7 @@ body {
     border-radius: 32px;
 }
 
-.profile-button:hover {
+/* .profile-button:hover {
     animation: pulse 1s infinite;
 }
 
@@ -381,7 +382,7 @@ body {
     100% {
         transform:scale(0.9);
     }
-}
+} */
 
 @media screen and (max-width:1280px) {
     .section-flex {
@@ -494,7 +495,7 @@ body {
     border-radius: 32px;
 }
 
-.works-button:hover {
+/* .works-button:hover {
     animation: pulse 1s infinite;
 }
 
@@ -508,7 +509,7 @@ body {
     100% {
         transform:scale(0.9);
     }
-}
+} */
 
 @media screen and (max-width:1080px) {
     .works-text {
@@ -612,7 +613,7 @@ body {
     border-radius: 32px;
 }
 
-.form-button:hover {
+/* .form-button:hover {
     animation: pulse 1s infinite;
 }
 
@@ -626,7 +627,7 @@ body {
     100% {
         transform:scale(0.9);
     }
-}
+} */
 
 /***************************** 自分のSNSに要望を受け付けるメッセージ ****************************/
 
