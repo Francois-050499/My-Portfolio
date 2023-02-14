@@ -368,21 +368,11 @@ body {
     border-radius: 32px;
 }
 
-/* .profile-button:hover {
-    animation: pulse 1s infinite;
+.profile-button:hover {
+    opacity: 0.8;
 }
 
-@keyframes pulse {
-    0% {
-        transform:scale(0.7);
-    }
-    50% {
-        transform:scale(1);
-    }
-    100% {
-        transform:scale(0.9);
-    }
-} */
+
 
 @media screen and (max-width:1280px) {
     .section-flex {
@@ -495,21 +485,9 @@ body {
     border-radius: 32px;
 }
 
-/* .works-button:hover {
-    animation: pulse 1s infinite;
+ .works-button:hover {
+    opacity: 0.8;
 }
-
-@keyframes pulse {
-    0% {
-        transform:scale(0.7);
-    }
-    50% {
-        transform:scale(1);
-    }
-    100% {
-        transform:scale(0.9);
-    }
-} */
 
 @media screen and (max-width:1080px) {
     .works-text {
@@ -613,21 +591,11 @@ body {
     border-radius: 32px;
 }
 
-/* .form-button:hover {
-    animation: pulse 1s infinite;
+.form-button:hover {
+    opacity: 0.8;
 }
 
-@keyframes pulse {
-    0% {
-        transform:scale(0.7);
-    }
-    50% {
-        transform:scale(1);
-    }
-    100% {
-        transform:scale(0.9);
-    }
-} */
+
 
 /***************************** 自分のSNSに要望を受け付けるメッセージ ****************************/
 
