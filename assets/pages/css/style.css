@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", "Noto Sans JP",
+      "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial",
+      "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    margin: 0;
+    padding: 0;
+
+    background-image: url(../../images/trianglify-export.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-position {
+    position: relative;
+}
+
+.hero-position > .header {
+    position: absolute;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 105px;
+}
+
+.hero > img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -235px;
+}
+
+@media screen and (max-width:768px) {
+
+    .hero {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 85px;
+    }
+
+.hero > img {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -125px;
+    }
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    top: 0;
+    left: 0;
+}
+
+.header-logo {
+    margin-top: 20px;
+}
+
+.header-logo > a {
+    display: block;
+}
+
+.profile-flex {
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-button {
+    display: inline-block;
+    width: 140px;
+    height: 55px;
+    text-align: center;
+    line-height: 52.5px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    /* border: 3px solid #000; */
+    background-color: #ff4500;
+    border-radius: 32px;
+}
+
+.profile-button:hover {
+    opacity: 0.8;
+}
+
+.footer {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.footer-line {
+    margin-top: 50px;
+    border-top-width: 2.5px;
+}
+
+.footer-copy {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+/* .codepen {
+    margin-bottom: 50px;
+} */
+
+.section {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.section-sub,
+.section-sub-margin {
+    display: flex; 
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.section-sub > img {
+    width: 60%;
+    height: 60%;
+    margin-left: -50px;
+}
+
+.section-sub-margin > img {
+    width: 60%;
+    height: 60%;
+    margin-left: -150px;
+} 
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section-title-sub {
+    /* text-align: center; */
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.section-title-point {
+    /* text-align: center; */
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4500;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.section-button::before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url(../../images/css.png) no-repeat;
+    vertical-align: text-bottom;
+    background-size: contain;
+    margin-right: 8px;
+}
+
+.section-description {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    line-height: 2.5;
+}
+
+.section-description-ref {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 2.5;
+    text-decoration: underline;
+}
+
+.section-description-ref:hover {
+    letter-spacing: 1.5px;
+    transform: scale(1.05);
+    color: #ff4500;
+}
+  
+.back-to-top {
+    background-color: #ff4500;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+  
+.back-to-top::before {
+    content: "";
+    position: absolute;
+    left: 19.25px;
+    bottom: inherit;
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    transform: rotate(-45deg);
+}
+  
+.back-to-top.active {
+    pointer-events: auto;
+    opacity: 1;
+}
+  
+.back-to-top.active:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
