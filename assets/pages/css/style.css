@@ -91,6 +91,19 @@ body {
     box-shadow: 10px 8px 25px 2px rgba(0, 0, 0, 0.15);
 }
 
+.profile-outside-another {
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1250px;
+    height: 150px;
+    border-radius: 24px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 10px 8px 25px 2px rgba(0, 0, 0, 0.15);
+}
+
 .profile-flex {
     margin: 60px auto;
     display: flex;
@@ -99,7 +112,8 @@ body {
     z-index: 2;
 }
 
-.profile-flex-double {
+.profile-flex-double,
+.profile-flex-multi {
     margin: 60px auto;
     display: flex;
     align-items: center;
@@ -111,9 +125,13 @@ body {
     margin: 0 60px;
 }
 
+.profile-flex-multi > a {
+    margin: 0 20px;
+}
+
 .profile-button {
     display: inline-block;
-    width: 140px;
+    width: 150px;
     height: 55px;
     text-align: center;
     line-height: 52.5px;
@@ -169,11 +187,19 @@ body {
 }
 
 .section-sub,
+.section-works,
 .section-sub-margin,
-.section-sub-reverse  {
+.section-sub-reverse,
+.section-sub-reverse-works  {
     display: flex; 
     max-width: 90%;
     margin: 0 auto;
+}
+
+.section-works > img {
+    width: 50%;
+    height: 50%;
+    margin-left: -50px;
 }
 
 .section-sub > img {
@@ -193,6 +219,12 @@ body {
     height: 60%;
     margin-right: -50px;
 } 
+
+.section-sub-reverse-works > img {
+    width: 50%;
+    height: 50%;
+    margin-right: -50px;
+}
 
 .section-title {
     text-align: center;
