@@ -1,48 +1,24 @@
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click',e => {
-        e.preventDefault()
+const animationTargetElements = document.querySelectorAll(".font-animation");
 
-        const target = document.querySelector(link.hash),
-        adjust = 15,
-        offsetTop = window.pageYOffset + target.getBoundingClientRect().top -adjust
+for (let i = 0; i < animationTargetElements.length; i++) {
+    const targetElement = animationTargetElements[i];
+        texts= targetElement.textContent;
+        textsArray = [];
 
-        window.scrollTo({
-            top: offsetTop,
-            behavior: 'smooth'
-        })
-    })
-})
+        targetElement.textContent = ""
 
-const backToTop = document.querySelector('#back-to-top');
-window.addEventListener('scroll' , () => {
-    if(window.pageYOffset > 200) {
-        backToTop.classList.add('active');
-    } else {
-        backToTop.classList.remove('active');
-    }
-});
+        for (let j = 0; j < texts.split("").length; j++) {
+            const t =  texts.split("")[j]
+            if (t === " ") {
+                textsArray.push (" ");
+            } else {
+                textsArray.push('<span style="animation-delay: ' + (j * 0.1) + 's;">'+ t + '</span>' );
+            }
+        }
 
-const pageTopBtn = document.querySelector('#back-to-top');
-pageTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-    });
-});
+        for (let k = 0; k <textsArray.length; k++) {
+            targetElement.innerHTML += textsArray[k];
+        }
 
-var pics_src = new Array("./assets/images/key-visual.png","./assets/images/studying.png","./assets/images/self-studying.png");
-
-var num = -1;
-
-slideshow_timer();
-
-function slideshow_timer() {
-    if (num == 2) {
-        num = 0;
-    }
-    else {
-        num ++;
-    }
-    document.getElementById("mypic").src=pics_src[num];
-    setTimeout("slideshow_timer()",5000);
+        
 }

@@ -1,0 +1,23 @@
+body {
+    background-color: #4169e1;
+    font-family: 'UD デジタル 教科書体 NP-B', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.ohtaki {
+    display: block;
+    font-size: 30px;
+    padding: 65px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .ohtaki {
+        display: block;
+        font-size: 20.5px;
+        padding: 45px 0px 45px 0;
+    }
+}
+
