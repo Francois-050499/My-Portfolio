@@ -145,11 +145,11 @@ body {
     }
 
     .header-navitem > a {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .header-navitem-content > a {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 
@@ -800,7 +800,7 @@ body {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
     .logo img {
         margin: -3.5px 5px;
     }
