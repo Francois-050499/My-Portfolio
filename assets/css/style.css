@@ -326,7 +326,7 @@ body {
         bottom: 50px;
         right: 0;
         left: 0;
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .section-description {
@@ -558,7 +558,7 @@ body {
         bottom: 150px;
         right: 0;
         left: 0;
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
@@ -654,6 +654,12 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+
+    .contact-form {
+        max-width: 50%;
+        margin: 40px 100px;
+    }
+
     .form-table,
     .form-table tbody,
     .form-table tr,
@@ -662,22 +668,26 @@ body {
     display: block;
     }
 
+    .form-table {
+        margin: 40px;
+    }
+
     .form-table th {
         padding: 10px;
     }
 
     .select {
         margin-top: 0px;
-        min-width: 350px;
+        min-width: 250px;
     }
 
     .input {
         margin-top: 0px;
-        min-width: 350px;
+        min-width: 250px;
     }
 
     .radio {
-        margin: 0px 25px;
+        margin: 0px 5px;
         font-size: 18px;
         font-weight: bold;
     }
@@ -685,7 +695,7 @@ body {
     .textarea {
         margin-top: 0px;
         padding: 20px;
-        min-width: 350px;
+        min-width: 250px;
     }
 
 }
