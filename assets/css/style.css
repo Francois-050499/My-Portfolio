@@ -138,7 +138,27 @@ body {
         left: 0;
         bottom: -125px;
     }
+
+    .header-logo {
+        width: 80%;
+        height: 50px;
+    }
+
+    .header-navitem > a {
+        font-size: 12px;
+    }
+
+    .header-navitem-content > a {
+        font-size: 12px;
+    }
 }
+
+/* @media screen and (max-width:500px) {
+    .header-logo {
+        width: 120%;
+        height: 50px;
+    }
+} */
 
 /*************************************キービジュアルページ ******************************************/
 
@@ -337,6 +357,12 @@ body {
     }
 }
 
+@media screen and (max-width:380px) {
+    .section-text {
+        font-size: 8px;
+    }
+}
+
 /***************************************自分紹介ページ ***************************************/
 
 .section-profile {
@@ -417,10 +443,12 @@ body {
 
 @media screen and (max-width:600px) {
     .section-headline {
+        font-size: 24px;
         margin-top: 100px;
     }
 
     .section-headline-sub {
+        font-size: 24px;
         margin-top: 25px;
     }
 
@@ -562,10 +590,17 @@ body {
     }
 }
 
+@media screen and (max-width:380px) {
+    .works-text {
+        font-size: 8px;
+    }
+}
+
+
+
 /*********************************コンタクトフォーム ******************************************/
 
 .contact-form {
-    max-width: 70%;
     margin: 40px auto;
 }
 
@@ -655,10 +690,10 @@ body {
 
 @media screen and (max-width: 600px) {
 
-    .contact-form {
-        max-width: 50%;
-        margin: 40px 100px;
-    }
+    /* .contact-form {
+        max-width: 100%;
+        margin: 40px auto;
+    } */
 
     .form-table,
     .form-table tbody,
@@ -669,7 +704,7 @@ body {
     }
 
     .form-table {
-        margin: 40px;
+        margin-left: 40px;
     }
 
     .form-table th {
@@ -694,10 +729,17 @@ body {
 
     .textarea {
         margin-top: 0px;
-        padding: 20px;
-        min-width: 250px;
+        padding: 7px;
+        min-width: 220px;
     }
 
+}
+
+@media screen and (max-width: 380px) {
+    .contact-form {
+        max-width: 100%;
+        margin: 40px -15px;
+    }
 }
 
 
@@ -753,6 +795,20 @@ body {
         margin-top: 20px;
         /* text-decoration: underline; */
         font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 4.5px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .logo img {
+        margin: -3.5px 5px;
+    }
+    
+    .logo-description {
+        margin-top: 20px;
+        /* text-decoration: underline; */
+        font-size: 12px;
         font-weight: bold;
         letter-spacing: 4.5px;
     }
