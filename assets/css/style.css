@@ -546,6 +546,22 @@ body {
     }
 }
 
+@media screen and (max-width:600px) {
+    .works-text {
+        opacity: 1;
+        width: 100%;
+        height: auto;
+        max-width: 80%;
+        margin: 40px auto;
+        position: absolute;
+        top: 50px;
+        bottom: 150px;
+        right: 0;
+        left: 0;
+        font-size: 16px;
+    }
+}
+
 /*********************************コンタクトフォーム ******************************************/
 
 .contact-form {
