@@ -139,6 +139,7 @@ body {
     height: 55px;
     text-align: center;
     line-height: 52.5px;
+    font-size: 12px;
     font-weight: bold;
     letter-spacing: 1.5px;
     /* border: 3px solid #000; */
@@ -154,6 +155,7 @@ body {
     text-align: center;
     line-height: 50.5px;
     font-weight: bold;
+    font-size: 12px;
     color: #fff;
     letter-spacing: 1.5px;
     /* border: 3px solid #fff; */
@@ -164,6 +166,92 @@ body {
 .profile-button:hover,
 .profile-button-site:hover {
     opacity: 0.8;
+}
+
+@media screen and (max-width:600px) {
+
+    .profile-outside {
+        width: 400px;
+        height: 150px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 10px 8px 25px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    .profile-flex-double > a {
+        margin: 0 2.5px;
+    }
+
+    .profile-button {
+        display: inline-block;
+        width: 150px;
+        height: 55px;
+    }
+    
+    .profile-button-site {
+        display: inline-block;
+        width: 190px;
+        height: 55px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .profile-outside {
+        width: 300px;
+        height: 150px;
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        box-shadow: 10px 8px 25px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    .profile-flex-double > a {
+        margin: 0 -4.5px;
+    }
+
+    .profile-button {
+        display: inline-block;
+        width: 120px;
+        height: 55px;
+        font-size: 10.5px;
+    }
+    
+    .profile-button-site {
+        display: inline-block;
+        width: 155px;
+        height: 55px;
+        font-size: 10.5px;
+        line-height: 52.5px;
+    }
+}
+
+@media screen and (max-width:380px) {
+
+    .profile-outside {
+        width: 280px;
+        height: 150px;
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        box-shadow: 10px 8px 25px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    .profile-flex-double > a {
+        margin: 0 -1.5px;
+    }
+
+    .profile-button {
+        display: inline-block;
+        width: 120px;
+        height: 55px;
+        font-size: 10.5px;
+    }
+    
+    .profile-button-site {
+        display: inline-block;
+        width: 145px;
+        height: 55px;
+        font-size: 8px;
+    }
 }
 
 /***************************************  フッター  ****************************************/
@@ -344,6 +432,50 @@ body {
     transform: scale(1.05);
     color: #ff4500;
 } */
+
+@media screen and (max-width:600px) {
+
+    .section-sub-margin {
+        display: block; 
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .section-sub-margin > img {
+        width: 100%;
+        height: 100%;
+        margin: 20px auto;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-title-description {
+        font-size: 16px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .section-list-description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:380px) {
+
+    .section-title-description {
+        font-size: 12px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        margin: 30px 0 25px 0;
+    }
+}
 
 /***************************************  トップへ戻るボタン  ****************************************/
 
