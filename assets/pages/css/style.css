@@ -146,7 +146,23 @@ body {
     border-radius: 32px;
 }
 
-.profile-button-site {
+.profile-button-site-short {
+    display: inline-block;
+    width: 100px;
+    height: 55px;
+    text-align: center;
+    line-height: 52.5px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    /* border: 3px solid #000; */
+    color: #ff4500;
+    /* background-color: #ff4500; */
+    border-radius: 32px;
+}
+
+.profile-button-site,
+.profile-button-site-short {
    text-decoration: underline;
    line-height: 50.5px;
 }
@@ -189,6 +205,14 @@ body {
         box-shadow: 10px 8px 25px 2px rgba(0, 0, 0, 0.15);
     }
 
+    .profile-outside-another {
+        width: 350px;
+        height: 150px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 10px 8px 25px 2px rgba(0, 0, 0, 0.15);
+    }
+
     .profile-flex-double > a {
         margin: 0 2.5px;
     }
@@ -197,10 +221,15 @@ body {
         margin: 0 -25.5px;
     }
 
+    .profile-flex-multi-plus > a {
+        margin: 0 -20.5px;
+    }
+
     .profile-button,
-    .profile-button-nextpage {
+    .profile-button-nextpage,
+    .profile-button-site-short {
         display: inline-block;
-        width: 150px;
+        width: 120px;
         height: 55px;
         font-size: 12px;
     }
@@ -443,11 +472,11 @@ body {
 }
 
 .section-list-description,
-.section-description,
 .section-description-sub {
     margin-left: 50px;
 }
 
+.section-description,
 .section-description-reverse {
     margin-left: 0px;
 }
