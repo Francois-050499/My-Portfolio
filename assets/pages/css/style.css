@@ -286,7 +286,9 @@ body {
 
 .section-sub,
 .section-works,
-.section-sub-margin {
+.section-sub-margin,
+.section-sub-reverse,
+.section-sub-reverse-works {
     display: flex; 
     max-width: 90%;
     margin: 0 auto;
@@ -294,40 +296,34 @@ body {
 
 .section-sub-reverse,
 .section-sub-reverse-works {
-    display: flex;
     flex-direction: row-reverse; 
-    max-width: 90%;
-    margin: 0 auto;
 }
 
 .section-works > img {
     width: 50%;
     height: 50%;
-    margin-left: -50px;
 }
 
-.section-sub > img {
-    width: 60%;
-    height: 60%;
-    margin-left: -50px;
-}
-
+.section-sub > img,
+.section-sub-reverse > img,
+.section-sub-reverse-works > img,
 .section-sub-margin > img {
     width: 60%;
     height: 60%;
-    margin-left: -150px;
 }
 
-.section-sub-reverse > img {
-    width: 60%;
-    height: 60%;
-    margin-right: -50px;
-} 
+.section-works > img,
+.section-sub > img {
+    margin-left: -50px;
+}
 
+.section-sub-reverse > img,
 .section-sub-reverse-works > img {
-    width: 50%;
-    height: 50%;
-    margin-right: -50px;
+    margin-left: 50px;
+}
+
+.section-sub-margin > img {
+    margin-left: -150px;
 }
 
 .section-title {
@@ -379,34 +375,28 @@ body {
     margin-right: 8px;
 }
 
-.section-list-description {
-    font-size: 20px;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    line-height: 2.5;
+.section-list-description,
+.section-description-sub {
     text-decoration: underline;
 }
 
-.section-description {
+.section-list-description,
+.section-description,
+.section-description-reverse,
+.section-description-sub {
     font-size: 20px;
-    margin-left: 50px;
     margin-bottom: 50px;
     line-height: 2.5;
+}
+
+.section-list-description,
+.section-description,
+.section-description-sub {
+    margin-left: 50px;
 }
 
 .section-description-reverse {
-    font-size: 20px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    line-height: 2.5;
-}
-
-.section-description-sub {
-    font-size: 20px;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    line-height: 2.5;
-    text-decoration: underline;
+    margin-left: 0px;
 }
 
 .section-font {
@@ -437,23 +427,39 @@ body {
 
 @media screen and (max-width:600px) {
 
-    .section-sub-margin {
+    .section-sub,
+    .section-works,
+    .section-sub-margin,
+    .section-sub-reverse {
         display: block; 
         max-width: 90%;
         margin: 0 auto;
     }
 
-    .section-sub-margin > img {
+    .section-sub > img,
+    .section-works > img,
+    .section-sub-margin > img,
+    .section-sub-reverse > img {
         width: 100%;
         height: 100%;
         margin: 20px auto;
     }
 
-    .section-title {
+    .section-title,
+    .section-title-sub,
+    .section-title-sub-sub {
         font-size: 24px;
     }
 
-    .section-title-description {
+    .section-title-sub,
+    .section-title-sub-sub {
+        text-align: center;
+        margin: 30px 0 25px 0;
+    }
+
+    .section-title-description,
+    .section-description,
+    .section-description-reverse {
         font-size: 16px;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -469,13 +475,16 @@ body {
 
 @media screen and (max-width:380px) {
 
-    .section-title-description {
+    .section-title-description,
+    .section-description,
+    .section-description-reverse {
         font-size: 12px;
         margin: 0 auto;
     }
 
-    .section-title {
-        margin: 30px 0 25px 0;
+    .section-title-sub,
+    .section-title-sub-sub {
+        font-size: 20px;
     }
 }
 
@@ -497,6 +506,7 @@ body {
     font-size: 32px;
     text-decoration: none;
     opacity: 0;
+    box-shadow: 5px 7px 13.5px 3px rgba(0, 0, 0, 0.35);
     pointer-events: none;
     transition: all 0.4s;
 }
