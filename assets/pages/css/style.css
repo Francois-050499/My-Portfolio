@@ -21,6 +21,8 @@ body {
     background-position: center center;
 }
 
+/***************************************  ヘッダー  ****************************************/
+
 .hero-position {
     position: relative;
 }
@@ -43,7 +45,7 @@ body {
     bottom: -235px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:600px) {
 
     .hero {
         position: relative;
@@ -77,6 +79,8 @@ body {
 .header-logo > a {
     display: block;
 }
+
+/***************************************  ページ切り替え  ****************************************/
 
 .profile-outside {
     margin: 60px auto;
@@ -162,6 +166,8 @@ body {
     opacity: 0.8;
 }
 
+/***************************************  フッター  ****************************************/
+
 .footer {
     max-width: 70%;
     margin: 0 auto;
@@ -177,6 +183,8 @@ body {
     text-align: center;
 }
 
+/***************************************  ページ構造  ****************************************/
+
 /* .codepen {
     margin-bottom: 50px;
 } */
@@ -188,10 +196,16 @@ body {
 
 .section-sub,
 .section-works,
-.section-sub-margin,
-.section-sub-reverse,
-.section-sub-reverse-works  {
+.section-sub-margin {
     display: flex; 
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.section-sub-reverse,
+.section-sub-reverse-works {
+    display: flex;
+    flex-direction: row-reverse; 
     max-width: 90%;
     margin: 0 auto;
 }
@@ -330,7 +344,9 @@ body {
     transform: scale(1.05);
     color: #ff4500;
 } */
-  
+
+/***************************************  トップへ戻るボタン  ****************************************/
+
 .back-to-top {
     background-color: #ff4500;
     position: fixed;
