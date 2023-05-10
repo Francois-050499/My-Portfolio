@@ -214,7 +214,7 @@ body {
 }
 
 .section-text {
-    opacity: 0;
+    opacity: 1;
     width: 100%;
     height: auto;
     max-width: 100%;
@@ -506,7 +506,7 @@ body {
 }
 
 .works-text {
-    opacity: 0;
+    opacity: 1;
     width: 100%;
     height: auto;
     max-width: 80%;
@@ -730,7 +730,7 @@ body {
     .textarea {
         margin-top: 0px;
         padding: 7px;
-        min-width: 220px;
+        min-width: 250px;
     }
 
 }
